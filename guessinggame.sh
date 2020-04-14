@@ -15,9 +15,9 @@ function checkNum {
 }
 
 
-randnum=$((1 + RANDOM % 100))
+randnum=$(pwd | ls | wc -l)
 
-echo "Guess the secret number"
+echo "Guess the number of files in this folder"
 
 status=1
 
